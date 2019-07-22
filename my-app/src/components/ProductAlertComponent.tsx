@@ -4,10 +4,7 @@ import { Product } from "../ducktypings/Product";
 const ProductAlertComponent: React.FC<Product> = (props: Product) => {
   return (
     <Fragment>
-      <div>
-        <button>Notify Me</button>
-      </div>
-      {props && (
+      {props.price && props.price < 7000 && (
         <div>
           <button>Notify Me</button>
         </div>

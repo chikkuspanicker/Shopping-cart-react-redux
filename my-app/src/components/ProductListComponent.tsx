@@ -3,7 +3,7 @@ import { Product } from "../ducktypings/Product";
 import ProductAlertComponent from "./ProductAlertComponent";
 
 const Products: Array<Product> = [
-  { name: "Phone XL", desc: "A large phone with one of the best screens" },
+  { name: "Phone XL", desc: "A large phone with one of the best screens", price : 1000 },
   { name: "Phone Mini", desc: "A great phone with one of the best cameras" },
   { name: "Phone Standard" }
 ];
