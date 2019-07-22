@@ -9,12 +9,12 @@ const Products: Array<Product> = [
 ];
 const ProductListComponent: React.FC = props => (
   <ul>
-    {Products.map((product: Product) => {
+    {Products.map((product: Product, key: number) => {
       return (
-        <li>
+        <li key={key}>
           <a href={`/${product.name}`}>{product.name}</a>
           {product.desc && <p>{product.desc}</p>}
-          <ProductAlertComponent {...product}/>
+          <ProductAlertComponent {...product} />
         </li>
       );
     })}
